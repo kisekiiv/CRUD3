@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.info {
+    padding-left: 30%;
+    text-align: left;
+}
+
+.info i {
+    padding-top: 10px;
+}
+
+.kontak {
+    padding: 10% 15% 15% 10%;
+    text-align: center;
+}
+
+.kontak h2 {
+    margin-left: 5rem;
+}
+
+.kontak p {
+    margin-left: 5rem;
+}
+
+.inputan {
+    text-align: right;
+}
+
+.inputan button {
+    margin-top: 20px;
+}
+
+.map {
+    padding-bottom: 5%;
+}
+
+.map h3 {
+    padding-bottom: 1%;
+}

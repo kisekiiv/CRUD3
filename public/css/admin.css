@@ -1,0 +1,290 @@
+/* Login*/
+
+.login-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    background: rgba(24, 20, 20, 0.987);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, .6);
+    border-radius: 10px;
+}
+
+.login-box .user-box {
+    position: relative;
+}
+
+.login-box .user-box input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+}
+
+.login-box .user-box label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.login-box .user-box input:focus~label,
+.login-box .user-box input:valid~label {
+    top: -20px;
+    left: 0;
+    color: #bdb8b8;
+    font-size: 12px;
+}
+
+.login-box form a {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #ffffff;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 40px;
+    letter-spacing: 4px
+}
+
+.login-box a:hover {
+    background: #03f40f;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #03f40f, 0 0 25px #03f40f, 0 0 50px #03f40f, 0 0 100px #03f40f;
+}
+
+.login-box a span {
+    position: absolute;
+    display: block;
+}
+
+@keyframes btn-anim1 {
+    0% {
+        left: -100%;
+    }
+    50%,
+    100% {
+        left: 100%;
+    }
+}
+
+.login-box a span:nth-child(1) {
+    bottom: 2px;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #03f40f);
+    animation: btn-anim1 2s linear infinite;
+}
+
+
+/* sidebar*/
+
+body {
+    margin: 0;
+    font-family: "Lato", sans-serif;
+}
+
+.sidebar {
+    margin: 0;
+    padding: 0;
+    width: 250px;
+    background-color: #508D69;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    overflow-x: hidden;
+}
+
+.sidebar h3 {
+    color: white;
+    padding: 30px 25px 20px 25px;
+}
+
+.sidebar a {
+    display: block;
+    color: white;
+    padding: 16px;
+    margin-left: 20px;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+.sidebar a.active {
+    background-color: #183D3D;
+    color: white;
+}
+
+.sidebar a:hover:not(.active) {
+    background-color: #93B1A6;
+    color: white;
+}
+
+.keluarInput {
+    margin-left: -20px;
+    background-color: red;
+    margin-top: 166px;
+    text-align: center;
+}
+
+.keluarAdmin {
+    margin-left: -20px;
+    background-color: red;
+    margin-top: 410px;
+    text-align: center;
+}
+
+.keluarInput a:hover:not(.active) {
+    background-color: #5e0707;
+    color: white;
+}
+
+.keluarAdmin a:hover:not(.active) {
+    background-color: #5e0707;
+    color: white;
+}
+
+div.content {
+    margin-left: 150px;
+    padding: 1px 0 0 16px;
+    height: auto;
+}
+
+@media screen and (max-width: 700px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    .sidebar a {
+        float: left;
+    }
+    div.content {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .sidebar a {
+        text-align: center;
+        float: none;
+    }
+}
+
+
+/*Admin*/
+
+.judul {
+    margin: 0;
+    padding: 20px 0 10px 100px;
+    background-color: black;
+    color: white;
+}
+
+.wadah {
+    padding: 15px 15px 1px 100px;
+    background-color: white;
+}
+
+.wadah h5 {
+    padding-bottom: 5px;
+}
+
+
+/*Form/Card*/
+
+.form .row {
+    padding: 0 0 25px 0;
+}
+
+.card-body input {
+    border: 2px solid rgb(158, 151, 151);
+}
+
+.tombolKembali {
+    margin-top: 50px;
+    float: left;
+}
+
+.tombolInput .col {
+    float: right;
+    margin-top: 50px;
+}
+
+
+/* table */
+
+table th {
+    text-align: center;
+}
+
+table td {
+    text-align: center;
+}
+
+@media screen and (max-width: 700px) {
+    .sidebar {
+        text-align: center;
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    .sidebar a {
+        float: left;
+    }
+    div.content {
+        margin-left: 0;
+        padding-left: 0;
+    }
+    .wadah {
+        margin: 0 20px 0 20px;
+        padding: 15px 0 1px 0;
+        background-color: white;
+    }
+    .judul {
+        margin-left: 0;
+        padding: 20px 0 10px 20px;
+        background-color: black;
+        color: white;
+    }
+    .tombolAksi {
+        margin: 20px 25px 0 auto;
+        float: none;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .sidebar a {
+        text-align: center;
+        margin-left: auto;
+        float: none;
+    }
+    .form {
+        align-items: center;
+        border-style: groove;
+        border: 5px solid rgb(207, 207, 207);
+        border-radius: 8px;
+        padding: 35px 25px 0 25px;
+        height: 650px;
+    }
+    .tombolAksi {
+        margin: 20px 25px 0 30px;
+        float: none;
+    }
+}
